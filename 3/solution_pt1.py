@@ -2,11 +2,6 @@ import re
 from collections import defaultdict
 
 
-def add_mapper_default(hash_map, row_ind):
-    if row_ind not in hash_map:
-        hash_map[row_ind] = defaultdict(int)
-
-
 if __name__ == '__main__':
 
     mapper = dict()
