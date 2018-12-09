@@ -1,5 +1,6 @@
 class Node:
     def __init__(self, ind, child_node_cnt, metadata_entry_cnt):
+        """This guy can probably be removed actually. It gets used a bit more in pt 2 though."""
         self.ind = ind
 
         self.child_node_cnt = child_node_cnt
