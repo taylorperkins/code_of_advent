@@ -1,6 +1,9 @@
 
 
 if __name__ == '__main__':
+    """Pretty straightforward approach to solving this one.
+    If the line starts with a '-', subtract it from total, else add it.
+    """
     start = 0
 
     with open('./input.txt') as f:
