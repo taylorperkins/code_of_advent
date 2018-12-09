@@ -79,10 +79,16 @@ if __name__ == '__main__':
         for line in f.read().splitlines():
             m = re.match(pattern, line)
 
-            game = MarbleMania(
+            game_1 = MarbleMania(
                 num_players=int(m.group('player_count')),
                 final_marble=int(m.group('last_marble')))
 
-            player_id, score = game.start()
-
+            game_1_player_id, game_1_score = game_1.start()
             # assert score == int(m.group('high_score'))
+
+            # part 2..
+            game_2 = MarbleMania(
+                num_players=int(m.group('player_count')),
+                final_marble=int(m.group('last_marble')) * 100)  # might be crazy!
+
+            game_2_player_id, game_2_score = game_2.start()

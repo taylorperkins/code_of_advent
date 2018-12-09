@@ -63,3 +63,8 @@ Here are a few more examples:
 ```
 
 _**What is the winning Elf's score?**_
+
+## --- Part Two --- ##
+Amused by the speed of your answer, the Elves are curious:
+
+_**What would the new winning Elf's score be if the number of the last marble were 100 times larger?**_
