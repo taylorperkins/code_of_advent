@@ -3,6 +3,14 @@ from collections import defaultdict
 
 
 if __name__ == '__main__':
+    """This one was a pretty straightforward problem I thought, but couldn't be calculated
+    until all of the patches had been iterated over.
+    
+    Iterate over each patch plan, and "draw" out the patch.
+    Keep track of the cell you are on, and count how many patches go over it.
+    
+    Finally, go over the results and figure out the cells that had multiple patches.
+    """
 
     mapper = dict()
 
@@ -19,6 +27,7 @@ if __name__ == '__main__':
                 for j in range(int(m.group('start_col')), int(m.group('start_col')) + int(m.group('width'))):
                     mapper[i][j] += 1
 
+    # If the cell had multiple patches, add to the sq_inch
     sq_inch = 0
     for i_val in mapper.values():
         for j_val in i_val.values():
